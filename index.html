@@ -1,170 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Delicious Bites - Menu</title>
-		<link rel="stylesheet" href="webpage.css" />
-	</head>
-	<body>
-		<!-- Header -->
-		<header>
-			<h1>Delicious Bites</h1>
-			<p class="tagline">Fresh • Tasty • Affordable</p>
-		</header>
 
-		<!-- Navigation -->
-		<nav>
-			<ul>
-				<li><a href="#menu">Menu</a></li>
-				<li><a href="#specials">Today's Specials</a></li>
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Employee Records & Registration Form</title>
+	<link rel="stylesheet" href="tableformstyling.css" />
+</head>
 
-		<!-- About Section -->
-		<section>
-			<h2 class="section-title">About Our Restaurant</h2>
-			<p>
-				At <strong>Delicious Bites</strong>, we believe in serving the freshest
-				and tastiest dishes at affordable prices. Our chefs use high-quality
-				ingredients and traditional cooking methods to bring you a meal you'll
-				never forget.
-			</p>
-			<p>
-				Whether you're here for a quick lunch, a family dinner, or a sweet
-				treat, our friendly staff will make sure you leave with a smile.
-			</p>
-		</section>
+<body>
+	<h1>Employee Records</h1>
+	<p>
+		Below is a list of employees with their contact details and country of
+		work.
+	</p>
 
-		<!-- Menu Table -->
-		<section>
-			<h2 class="section-title">Our Menu</h2>
-			<table>
-				<!-- Starters -->
-				<tr>
-					<th colspan="2">Starters</th>
-				</tr>
-				<tr>
-					<td class="item-name">Tomato Soup</td>
-					<td class="price">Rs. 250</td>
-				</tr>
-				<tr>
-					<td class="item-name">Chicken Wings</td>
-					<td class="price">Rs. 450</td>
-				</tr>
-				<tr>
-					<td class="item-name">Spring Rolls</td>
-					<td class="price">Rs. 300</td>
-				</tr>
-				<tr>
-					<td class="item-name">Garlic Bread</td>
-					<td class="price">Rs. 200</td>
-				</tr>
+	<!-- Employee Table -->
+	<table>
+		<thead>
+			<tr>
+				<th>Employee ID</th>
+				<th>Full Name</th>
+				<th>Email Address</th>
+				<th>Department</th>
+				<th>Country</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>EMP001</td>
+				<td>Alice Johnson</td>
+				<td>alice.johnson@example.com</td>
+				<td>Human Resources</td>
+				<td>USA</td>
+			</tr>
+			<tr>
+				<td>EMP002</td>
+				<td>Bob Smith</td>
+				<td>bob.smith@example.com</td>
+				<td>Marketing</td>
+				<td>UK</td>
+			</tr>
+			<tr>
+				<td>EMP003</td>
+				<td>Charlie Brown</td>
+				<td>charlie.brown@example.com</td>
+				<td>Finance</td>
+				<td>Canada</td>
+			</tr>
+			<tr>
+				<td>EMP004</td>
+				<td>Diana Adams</td>
+				<td>diana.adams@example.com</td>
+				<td>IT Support</td>
+				<td>Australia</td>
+			</tr>
+			<tr>
+				<td>EMP005</td>
+				<td>Edward Wilson</td>
+				<td>edward.wilson@example.com</td>
+				<td>Sales</td>
+				<td>Germany</td>
+			</tr>
+		</tbody>
+	</table>
 
-				<!-- Main Course -->
-				<tr>
-					<th colspan="2">Main Course</th>
-				</tr>
-				<tr>
-					<td rowspan="2" class="item-name">Grilled Chicken</td>
-					<td class="price">Half: Rs. 600</td>
-				</tr>
-				<tr>
-					<td class="price">Full: Rs. 1000</td>
-				</tr>
-				<tr>
-					<td class="item-name">Veg Biryani</td>
-					<td class="price">Rs. 550</td>
-				</tr>
-				<tr>
-					<td class="item-name">Paneer Butter Masala</td>
-					<td class="price">Rs. 500</td>
-				</tr>
-				<tr>
-					<td class="item-name">Mutton Curry</td>
-					<td class="price">Rs. 900</td>
-				</tr>
+	<!-- Registration Form -->
+	<h1>Employee Registration Form</h1>
+	<p>Fill out the form below to register a new employee into our system.</p>
 
-				<!-- Desserts -->
-				<tr>
-					<th colspan="2">Desserts</th>
-				</tr>
-				<tr>
-					<td class="item-name">Chocolate Cake</td>
-					<td class="price">Rs. 300</td>
-				</tr>
-				<tr>
-					<td class="item-name">Ice Cream (2 scoops)</td>
-					<td class="price">Rs. 200</td>
-				</tr>
-				<tr>
-					<td class="item-name">Custard</td>
-					<td class="price">Rs. 150</td>
-				</tr>
-				<tr>
-					<td class="item-name">Fruit Salad</td>
-					<td class="price">Rs. 250</td>
-				</tr>
-			</table>
-		</section>
+	<form>
+		<label for="fullname">Full Name:</label>
+		<input type="text" id="fullname" name="fullname" placeholder="Enter full name" required />
 
-		<!-- Specials List -->
-		<section>
-			<h2 class="section-title">Today's Specials</h2>
-			<ul>
-				<li>BBQ Platter - Rs. 1200</li>
-				<li>Seafood Pasta - Rs. 950</li>
-				<li>Cheese Burst Pizza - Rs. 800</li>
-				<li>Falooda with Ice Cream - Rs. 350</li>
-			</ul>
-		</section>
+		<label for="email">Email Address:</label>
+		<input type="email" id="email" name="email" placeholder="Enter email address" required />
 
-		<!-- Customer Reviews -->
-		<section>
-			<h2 class="section-title">Customer Reviews</h2>
-			<p>
-				"The best dining experience I've had in years! Highly recommended." -
-				<i>Ravi Kumar</i>
-			</p>
-			<p>
-				"Delicious food and friendly service. Will visit again!" -
-				<i>Priya Sharma</i>
-			</p>
-			<p>
-				"The BBQ platter was heavenly. Worth every rupee!" -
-				<i>Arjun Patel</i>
-			</p>
-		</section>
+		<label for="department">Department:</label>
+		<input type="text" id="department" name="department" placeholder="Enter department" required />
 
-		<!-- Contact Form -->
-		<section>
-			<h2 class="section-title">Contact Us</h2>
-			<form>
-				<label for="name">Name:</label>
-				<br />
-				<input type="text" id="name" name="name" required />
-				<br /><br />
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" required />
 
-				<label for="email">Email:</label><br />
-				<input type="email" id="email" name="email" required />
-				<br /><br />
+		<label for="country">Country:</label>
+		<select id="country" name="country" required>
+			<option value="">Select country</option>
+			<option value="USA">USA</option>
+			<option value="UK">UK</option>
+			<option value="Canada">Canada</option>
+			<option value="Australia">Australia</option>
+			<option value="Germany">Germany</option>
+		</select>
 
-				<label for="message">Your Message:</label><br />
-				<textarea id="message" name="message" rows="5"></textarea>
-				<br /><br />
+		<label for="startdate">Start Date:</label>
+		<input type="date" id="startdate" name="startdate" required />
 
-				<button type="submit">Send Message</button>
-			</form>
-		</section>
+		<button type="submit">Register Employee</button>
+	</form>
+</body>
 
-		<!-- Footer -->
-		<footer id="footer">
-			<p>&copy; 2025 Delicious Bites | All Rights Reserved</p>
-			<p>
-				Follow us on: <a href="#">Facebook</a> | <a href="#">Instagram</a> |
-				<a href="#">Twitter</a>
-			</p>
-		</footer>
-	</body>
 </html>
